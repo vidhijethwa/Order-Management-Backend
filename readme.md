@@ -14,3 +14,8 @@ You need to write the following commands on the terminal screen so that you can 
 ```
 
 The application is running on [localhost](http://localhost:3000).
+
+# Set Env
+PORT=8002
+username=example
+password=example@123
