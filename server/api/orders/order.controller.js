@@ -18,8 +18,13 @@ orderRequest.saveOrder = async (req, res) => {
 orderRequest.fetchOrders = async (req, res) => {
   try {
     const orders = await orderSchema.find({})
+
+    console.log("orders", orders.length);
+
     return res.status(200).json({ data: orders, message: 'Order fetched successfully' });
   } catch (e) {
+    console.log(e);
+
     return res.status(200).json({ message: 'Internal server error' })
   }
 };

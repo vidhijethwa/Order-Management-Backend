@@ -6,7 +6,7 @@ loginrequest.getLogin = async (req, res) => {
   const username = req.body.username
   const password = req.body.password
 
-  if (username === process.env.username && password === process.env.password) {
+  if (username === process.env.USER_NAME && password === process.env.PASSWORD) {
     return res.status(200).json({
       message: "Successfully login",
     });

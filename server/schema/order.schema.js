@@ -5,4 +5,4 @@ const orderSchema = new mongoose.Schema({
       quantity: { type: String, required: true },
 }, { timestamps: true });
 
-module.exports = mongoose.model('Order', orderSchema);
+module.exports = mongoose.model('Order', orderSchema, 'orders');
